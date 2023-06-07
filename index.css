@@ -4,53 +4,62 @@ html {
   margin: 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0px;
+  padding: 15px;
 }
 
 .pimg1 {
   position: relative;
-  background: url(images/animeheader-spider.png) #1f2328 center fixed no-repeat;
+  background: url(images/animeheader-spider.png) rgb(31, 35, 40) center fixed
+    no-repeat;
   min-height: 100%;
   background-size: contain;
 }
 
 .pimg2 {
   position: relative;
-  background: url(images/demonslayer.png) #1f2328 center fixed no-repeat;
+  background: url(images/demonslayer.png) rgb(31, 35, 40) center fixed no-repeat;
   background-size: contain;
-  min-height: 500px;
+  min-height: 400px;
 }
 
 .pimg3 {
   position: relative;
-  background: url(images/tokyoghoul.png) #1f2328 center fixed no-repeat;
+  background: url(images/tokyoghoul.png) rgb(31, 35, 40) center fixed no-repeat;
   background-size: contain;
   min-height: 350px;
 }
 
 .pimg4 {
   position: relative;
-  background: url(images/onepiecehead.png) #1f2328 center fixed no-repeat;
+  background: url(images/onepiecehead.png) rgb(31, 35, 40) center fixed
+    no-repeat;
   background-size: contain;
-  min-height: 600px;
+  min-height: 450px;
 }
 
 .pimg5 {
   position: relative;
-  background: url(images/psychopass.png) #1f2328 center fixed no-repeat;
+  background: url(images/psychopass.png) rgb(31, 35, 40) center fixed no-repeat;
   background-size: contain;
   min-height: 550px;
 }
 
 .pimg6 {
   position: relative;
-  background: url(images/onepunchman.png) #1f2328 center fixed no-repeat;
+  background: url(images/onepunchman.png) rgb(31, 35, 40) center fixed no-repeat;
   background-size: contain;
   min-height: 550px;
 }
 
 .pimg7 {
   position: relative;
-  background: url(images/animeheader-spider.png) #1f2328 center fixed no-repeat;
+  background: url(images/animeheader-spider.png) rgb(31, 35, 40) center fixed
+    no-repeat;
   min-height: 100%;
   background-size: contain;
 }
@@ -58,23 +67,30 @@ html {
 .section {
   text-align: center;
   padding: 25px 40px;
-  background-color: #d7d8e2;
+  background: linear-gradient(
+    120deg,
+    rgb(233, 219, 232),
+    rgb(244, 247, 235),
+    rgb(244, 247, 235),
+    rgb(197, 215, 213)
+  );
   color: rgb(18, 18, 19);
 }
 
 .ptext {
   position: sticky;
-  text-align: center;
   top: 50%;
   width: 100%;
-  color: #f4f7eb;
+  color: rgb(244, 247, 235);
   font-size: 45px;
   font-weight: bold;
   -webkit-text-stroke: 2px black;
   text-shadow: 1px 3px 0px black;
 }
 
-.container {
+.container1,
+.container3,
+.container4 {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -85,15 +101,15 @@ p {
   padding: 10px;
   margin: 5px;
   box-shadow: 5px 5px 10px black;
+  line-height: 20px;
 }
 
 .container-text {
-  text-align: start;
   flex-direction: row;
-  max-width: 800px;
+  max-width: 900px;
 }
 
-.text1 {
+.text {
   display: inline-flex;
 }
 
@@ -102,34 +118,165 @@ p {
   background: url(images/yuri-anime.gif) bottom no-repeat;
   background-size: contain;
   min-width: 200px;
-  text-align: center;
   padding: 10px;
 }
 
 .frame2 {
   display: flex;
   align-items: center;
-  text-align: center;
   min-width: 230px;
   padding: 25px;
 }
 
 .frame3 {
   display: flex;
-  background: url("images/speedlines.png") center no-repeat;
-  background-size: cover;
+  background: url("images/actionlines.png") center no-repeat;
+  background-size: fill;
   font-size: 20px;
   font-weight: bold;
   min-height: 150px;
   min-width: 150px;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 .img1 {
   max-height: 400px;
   border: 5px solid rgb(18, 18, 19);
   border-radius: 15px;
-  box-shadow: 5px 10px 20px black;
+  box-shadow: 5px 5px 10px black;
+}
+
+.frame4 {
+  min-width: 100px;
+  padding: 40px 20px;
+}
+
+.frame5 {
+  background: url("images/no-sleep.gif") bottom no-repeat;
+  background-size: contain;
+  min-height: 190px;
+  padding: 10px;
+}
+
+.container2 {
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-evenly;
+}
+
+.imgcont {
+  display: flex;
+  flex-direction: column;
+}
+
+.img2,
+.img3 {
+  max-height: 200px;
+  align-self: center;
+  border: 5px solid rgb(18, 18, 19);
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px black;
+  margin-bottom: 15px;
+}
+
+.frame6 {
+  display: flex;
+  background: url("images/actionlines.png") center no-repeat;
+  background-size: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  min-height: 60px;
+  min-width: 100px;
+}
+
+.frame7,
+.frame8,
+.frame9,
+.frame10,
+.frame11,
+.frame12,
+.frame13,
+.frame14,
+.frame15,
+.frame16,
+.frame20 {
+  padding: 18px;
+  align-self: center;
+}
+
+.frame11 {
+  background: url("images/actionlines.png") center no-repeat;
+  background-size: fit;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.section-two,
+.section-three {
+  padding: 50px 40px;
+}
+
+.img4 {
+  max-width: 350px;
+  margin-left: 5px;
+  border: 5px solid rgb(18, 18, 19);
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px black;
+}
+
+.frame12 {
+  min-width: 300px;
+}
+
+.img5,
+.img6 {
+  max-height: 300px;
+  align-self: center;
+}
+.frame15 {
+  align-self: center;
+  border-radius: 30px;
+  background: url("images/actionlines.png") center no-repeat;
+  background-size: fill;
+}
+.img7 {
+  max-height: 200px;
+  border: 5px solid rgb(18, 18, 19);
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px black;
+  align-self: center;
+  margin-left: 15px;
+}
+
+.img8,
+.img9 {
+  max-width: 250px;
+  border: 5px solid rgb(18, 18, 19);
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px black;
+  align-self: center;
+}
+
+.frame16 {
+  margin: 0px 15px 5px 15px;
+}
+
+.frame17,
+.frame18,
+.frame19 {
+  display: flex;
+  max-width: 300px;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+}
+
+.img10 {
+  border: 5px solid rgb(18, 18, 19);
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px black;
+  align-self: center;
 }
