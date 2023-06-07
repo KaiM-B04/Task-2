@@ -76,31 +76,60 @@ html {
 
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-}
-
-.container-text {
-  text-align: start;
-  flex-direction: row;
-  max-width: 700px;
-}
-
-.text1 {
-  display: inline-flex;
-  flex-shrink: 2;
-}
-
-.otaku {
-  max-height: 400px;
-  border: 5px solid rgb(18, 18, 19);
-  border-radius: 15px;
-  box-shadow: 5px 10px 20px black;
 }
 
 p {
   border: rgb(18, 18, 19) solid 2px;
   padding: 10px;
   margin: 5px;
-  box-shadow: 5px 10px 10px black;
+  box-shadow: 5px 5px 10px black;
+}
+
+.container-text {
+  text-align: start;
+  flex-direction: row;
+  max-width: 800px;
+}
+
+.text1 {
+  display: inline-flex;
+}
+
+.frame1 {
+  display: flex;
+  background: url(images/yuri-anime.gif) bottom no-repeat;
+  background-size: contain;
+  min-width: 200px;
+  text-align: center;
+  padding: 10px;
+}
+
+.frame2 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  min-width: 230px;
+  padding: 25px;
+}
+
+.frame3 {
+  display: flex;
+  background: url("images/speedlines.png") center no-repeat;
+  background-size: cover;
+  font-size: 20px;
+  font-weight: bold;
+  min-height: 150px;
+  min-width: 150px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.img1 {
+  max-height: 400px;
+  border: 5px solid rgb(18, 18, 19);
+  border-radius: 15px;
+  box-shadow: 5px 10px 20px black;
 }
