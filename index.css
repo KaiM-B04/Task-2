@@ -90,7 +90,9 @@ h2 {
 
 .container1,
 .container3,
-.container4 {
+.container4,
+.container5,
+.container6 {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -215,7 +217,8 @@ p {
 }
 
 .section-two,
-.section-three {
+.section-three,
+.section-four {
   padding: 50px 40px;
 }
 
@@ -279,4 +282,8 @@ p {
   border-radius: 15px;
   box-shadow: 5px 5px 10px black;
   align-self: center;
+}
+
+.img11 {
+  max-width: 200px;
 }
